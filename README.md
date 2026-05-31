@@ -12,13 +12,13 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
 Hardware – PCs, Cyclone II , USB flasher
 
-**Software – Quartus prime**
+**Software – Quartus prime:**
 
-**Theory**
+**Theory:**
 
-**Logic Diagram**
+**Logic Diagram:**
 
-**Procedure**
+**Procedure:**
 
 1.	Type the program in Quartus software.
 
@@ -33,18 +33,42 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
+i)
+module exp1de1(a,b,c,d,f1); 
+input a,b,c,d; 
+output f1; 
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c)); 
+endmodule
+ii) 
+module exp2de2(w,x,y,z,f2); 
+input w,x,y,z; 
+output f2; 
+assign f2=((~y & z)|( w & y )|(x & y)); 
+endmodule
+
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: A.B.GNANA PRAGATHIKA
 
-
-**RTL realization**
+RegisterNumber:212225230075
 
 **Output:**
 
-**RTL**
+**RTL:**
 
-**Timing Diagram**
+<img width="1920" height="1080" alt="Screenshot 2026-05-27 100944" src="https://github.com/user-attachments/assets/314c2d84-9bd9-4247-9da1-e72b205dbbae" />
+
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-27 102907" src="https://github.com/user-attachments/assets/e8075ddc-811a-42bc-88cd-61f00db277d9" />
+
+
+**WAVEFORM:**
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-27 102005" src="https://github.com/user-attachments/assets/9fc49502-f242-4b76-a0b3-5bd28af08219" />
+
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-27 103656" src="https://github.com/user-attachments/assets/8e8b186d-a346-4aff-9009-7aa5400f9a71" />
+
 
 **Result:**
 
